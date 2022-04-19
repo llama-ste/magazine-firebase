@@ -2,8 +2,16 @@ import { Badge } from "@mui/material";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
+import styled from "styled-components";
 
 import { realtime } from "../../shared/firebase";
+
+const NotiWrapper = styled.div`
+  display: inline;
+  &:hover {
+    cursor: pointer;
+  }
+`;
 
 const NotiBadge = (props) => {
   const userId = useSelector((state) => state.user.user.uid);
@@ -27,7 +35,7 @@ const NotiBadge = (props) => {
   }, [userId]);
 
   return (
-    <>
+    <NotiWrapper>
       <Badge
         color="warning"
         variant="dot"
@@ -36,7 +44,7 @@ const NotiBadge = (props) => {
       >
         <NotificationsIcon />
       </Badge>
-    </>
+    </NotiWrapper>
   );
 };
 

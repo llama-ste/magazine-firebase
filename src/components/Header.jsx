@@ -39,7 +39,7 @@ const Header = () => {
           />
           <Button
             onClick={() => dispatch(userActions.logoutFB())}
-            sx={{ fontWeight: 900, ml: 1 }}
+            sx={{ fontWeight: 900 }}
             size="large"
           >
             로그아웃

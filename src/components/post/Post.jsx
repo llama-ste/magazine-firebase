@@ -163,6 +163,7 @@ const Post = memo((props) => {
         </div>
         {isMe && (
           <Button
+            sx={{ fontWeight: 900 }}
             size="small"
             variant="contained"
             onClick={() => history.push(`/edit-post/${id}`)}
