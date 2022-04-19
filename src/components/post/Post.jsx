@@ -84,15 +84,13 @@ const Post = memo((props) => {
             <div style={{ display: "flex", justifyContent: "center" }}>
               <CardMedia
                 component="img"
-                sx={{ height: "40vh", width: "100%", objectFit: "contain" }}
+                sx={{ height: "30vh", width: "100%", objectFit: "contain" }}
                 image={imageUrl}
                 alt="img"
               />
             </div>
             <CardContent>
-              <Typography variant="body1" color="text.secondary">
-                {contents}
-              </Typography>
+              <Typography color="text.secondary">{contents}</Typography>
             </CardContent>
           </>
         )}
@@ -101,15 +99,13 @@ const Post = memo((props) => {
             <div style={{ width: "50%" }}>
               <CardMedia
                 component="img"
-                sx={{ height: "40vh", width: "100%", objectFit: "contain" }}
+                sx={{ height: "30vh", width: "100%", objectFit: "contain" }}
                 image={imageUrl}
                 alt="img"
               />
             </div>
             <CardContent sx={{ width: "50%" }}>
-              <Typography variant="body1" color="text.secondary">
-                {contents}
-              </Typography>
+              <Typography color="text.secondary">{contents}</Typography>
             </CardContent>
           </PostLayout>
         )}
@@ -118,29 +114,25 @@ const Post = memo((props) => {
             <div style={{ width: "50%" }}>
               <CardMedia
                 component="img"
-                sx={{ height: "40vh", width: "100%", objectFit: "contain" }}
+                sx={{ height: "30vh", width: "100%", objectFit: "contain" }}
                 image={imageUrl}
                 alt="img"
               />
             </div>
             <CardContent sx={{ width: "50%" }}>
-              <Typography variant="body1" color="text.secondary">
-                {contents}
-              </Typography>
+              <Typography color="text.secondary">{contents}</Typography>
             </CardContent>
           </PostLayout>
         )}
         {layout === "bottom" && (
           <div>
             <CardContent>
-              <Typography variant="body1" color="text.secondary">
-                {contents}
-              </Typography>
+              <Typography color="text.secondary">{contents}</Typography>
             </CardContent>
             <div style={{ display: "flex", justifyContent: "center" }}>
               <CardMedia
                 component="img"
-                sx={{ height: "40vh", width: "100%", objectFit: "contain" }}
+                sx={{ height: "30vh", width: "100%", objectFit: "contain" }}
                 image={imageUrl}
                 alt="img"
               />
