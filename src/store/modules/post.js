@@ -348,7 +348,7 @@ export default handleActions(
       }),
     [DELETE_POST]: (state, action) =>
       produce(state, (draft) => {
-        let delList = draft.list.findIndex(
+        const delList = draft.list.findIndex(
           (p) => p.id === action.payload.postId
         );
 
@@ -374,7 +374,12 @@ export default handleActions(
           draft.list[idx].like.push(userId);
           draft.list[idx].likeCnt += 1;
         } else {
-          draft.list[idx].like.filter((p) => p !== userId);
+          const delList = draft.list[idx].like.findIndex((p) => p === userId);
+
+          if (delList !== -1) {
+            draft.list[idx].like.splice(delList, 1);
+          }
+
           draft.list[idx].likeCnt -= 1;
         }
       }),
