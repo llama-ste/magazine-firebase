@@ -31,7 +31,7 @@ function App() {
   }, [dispatch, hasSession]);
 
   return (
-    <Container>
+    <Container maxWidth="sm">
       <Header />
       <ConnectedRouter history={history}>
         <Switch>
