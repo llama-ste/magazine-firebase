@@ -1,5 +1,4 @@
-import Avatar from "@mui/material/Avatar";
-import Paper from "@mui/material/Paper";
+import { Paper, Avatar } from "@mui/material";
 import { red } from "@mui/material/colors";
 
 import { history } from "../../store/configStore";

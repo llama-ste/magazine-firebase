@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
+import { TextField, Button } from "@mui/material";
 
 import { actionCreators as commentActions } from "../../store/modules/comment";
 

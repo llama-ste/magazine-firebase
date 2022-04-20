@@ -1,5 +1,4 @@
-import Paper from "@mui/material/Paper";
-import Avatar from "@mui/material/Avatar";
+import { Avatar, Paper } from "@mui/material";
 import { red } from "@mui/material/colors";
 
 const Comment = (props) => {

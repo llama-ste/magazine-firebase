@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styled, { css } from "styled-components";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
-import ToggleButton from "@mui/material/ToggleButton";
-import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
-import CircularProgress from "@mui/material/CircularProgress";
+import {
+  TextField,
+  Button,
+  ToggleButton,
+  ToggleButtonGroup,
+  CircularProgress,
+} from "@mui/material";
 
 import { history } from "../../store/configStore";
 import ImageUpload from "../../shared/ImageUpload";

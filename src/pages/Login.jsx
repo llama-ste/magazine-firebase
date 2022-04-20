@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
+
+import { Button, TextField } from "@mui/material";
 import { useForm, Controller } from "react-hook-form";
 import { useDispatch } from "react-redux";
 
