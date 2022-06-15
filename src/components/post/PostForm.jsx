@@ -135,7 +135,9 @@ const PostForm = ({ postId }) => {
             </div>
           ) : (
             <>
-              <h3>{isEdit ? "게시글 수정" : "게시글 작성"}</h3>
+              <h2 style={{ margin: "0px" }}>
+                {isEdit ? "게시글 수정" : "게시글 작성"}
+              </h2>
 
               <ImageUpload />
               <ToggleButtonGroup
@@ -219,7 +221,9 @@ const PostForm = ({ postId }) => {
                 </LayoutWrapper>
               )}
               {isEdit ? (
-                <div style={{ display: "flex", gap: "10px" }}>
+                <div
+                  style={{ display: "flex", gap: "10px", marginBottom: "20px" }}
+                >
                   <Button
                     onClick={deletePostHandler}
                     variant="contained"

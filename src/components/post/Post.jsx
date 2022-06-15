@@ -27,6 +27,7 @@ const DetailPageLink = styled.div`
 `;
 
 const PostLayout = styled.div`
+  width: 100%;
   ${({ layout }) =>
     layout === "left"
       ? css`

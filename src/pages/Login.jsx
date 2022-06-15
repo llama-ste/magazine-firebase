@@ -74,7 +74,7 @@ const Login = () => {
             <TextField
               fullWidth
               placeholder="이메일"
-              label="ID"
+              label="Email"
               value={value}
               onChange={onChange}
               error={!!error}

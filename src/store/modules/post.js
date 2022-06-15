@@ -355,10 +355,6 @@ export default handleActions(
         if (delList !== -1) {
           draft.list.splice(delList, 1);
         }
-
-        // draft.list.filter((p) => {
-        //   return p.id !== action.payload.postId;
-        // });
       }),
     [LOADING]: (state, action) =>
       produce(state, (draft) => {

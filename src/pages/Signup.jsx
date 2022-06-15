@@ -72,7 +72,7 @@ const Signup = () => {
           render={({ field: { onChange, value }, fieldState: { error } }) => (
             <TextField
               fullWidth
-              label="ID"
+              label="Email"
               value={value}
               placeholder="이메일"
               onChange={onChange}

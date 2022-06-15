@@ -14,7 +14,7 @@ const ListWrapper = styled.div`
   .addBtn {
     position: fixed;
     bottom: 50px;
-    right: 20px;
+    right: 50px;
   }
 `;
 
